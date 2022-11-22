@@ -13,6 +13,7 @@ const resolverRuta = (ruta) => {
     }
 }
 
+
 //función recursiva
 const acumularArchivosMds = (ruta) => {
     let arrayMds = []
@@ -36,7 +37,20 @@ const acumularArchivosMds = (ruta) => {
 
 //buscar links de un solo md
 
+//leer el contenido de los archivos Md
+const leerMd = (ruta) => {
+    let read = fs.readFileSync(ruta, "utf-8");
+    //console.log("este es el contenido del archivo", read, 44);
+  };
+//console.log( leerMd ("D:/Mi unidad/Laboratoria/Git Proyects/BOG005-md-links/recursiva/otra/file.md"));
+
+//extraer unicamente los links de los archivos Md
+const extraerLinks = (ruta) =>{
+    let extraer = fs.
+}
+
 //buscar el resultado de links encontrados en la función anterior
+
 
 
 
